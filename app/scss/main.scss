@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+main {
+  height: 200vh;
+  background-color: #fff;
+}
+
+//Carousel
+
+.carousel-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  .carousel {
+    height: 512px;
+    width: 100% !important;
+    background-color: gray !important;
+    color: white !important;
+
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: max-content;
+          max-height: 512px;
+          background-repeat: no-repeat;
+          opacity: 0.4;
+        }
+
+        .carousel-caption {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 300px;
+
+          h1 {
+            font-size: 3rem !important;
+          }
+
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Headings
+
+.headings {
+  background-color: #fff;
+  min-height: 550px;
+
+  .container-sm {
+    .row {
+      .heading-container {
+        height: auto;
+        width: 22rem;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-weight: 300;
+        }
+
+        p {
+          opacity: 0.8;
+        }
+
+        .circle {
+          height: 150px;
+          width: 150px;
+          background-color: gray;
+          border-radius: 50%;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+//Featurette
+
+.featurette {
+  background-color: #fff;
+  min-height: 500px;
+
+  .container-sm {
+    @media (max-width: 800px) {
+      padding: 0;
+    }
+    .featurette-card {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 15px 0;
+      border-top: 1px rgba(0, 0, 0, 0.1) solid;
+      padding: 8rem 0;
+
+      @media (max-width: 900px) {
+        text-align: center;
+        justify-content: center !important;
+        align-items: center;
+      }
+
+      .featurette-desc {
+        width: 50%;
+        @media (max-width: 900px) {
+          width: 100%;
+          text-align: left;
+        }
+
+        h1 {
+          opacity: 0.8;
+          font-size: 3.1rem;
+          font-weight: 400;
+          @media (max-width: 900px) {
+            font-size: 2.5rem;
+            
+          }
+  
+
+          .grey-text {
+            color: #6c757d;
+          }
+        }
+      }
+
+      img {
+        width: 450px;
+        height: 450px;
+        @media (max-width: 900px) {
+          width: 450px;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
