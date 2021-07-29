@@ -48,13 +48,23 @@ main {
           flex-direction: column;
           justify-content: center;
           height: 300px;
+          @media (max-width: 750px) {
+            top: 150px;
+          }
 
           h1 {
             font-size: 3rem !important;
+            @media (max-width: 750px) {
+              font-size: 2.5rem!important;
+            }
+  
           }
 
           p {
             font-size: 1.5rem;
+            @media (max-width: 750px) {
+              font-size: 1.2rem!important;
+            }
           }
         }
       }
@@ -133,7 +143,7 @@ main {
           font-size: 3.1rem;
           font-weight: 400;
           @media (max-width: 900px) {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             
           }
   

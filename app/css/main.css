@@ -44,11 +44,26 @@ main {
   justify-content: center;
   height: 300px;
 }
+@media (max-width: 750px) {
+  .carousel-container .carousel .carousel-inner .carousel-item .carousel-caption {
+    top: 150px;
+  }
+}
 .carousel-container .carousel .carousel-inner .carousel-item .carousel-caption h1 {
   font-size: 3rem !important;
 }
+@media (max-width: 750px) {
+  .carousel-container .carousel .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 2.5rem !important;
+  }
+}
 .carousel-container .carousel .carousel-inner .carousel-item .carousel-caption p {
   font-size: 1.5rem;
+}
+@media (max-width: 750px) {
+  .carousel-container .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 1.2rem !important;
+  }
 }
 
 .headings {
@@ -116,7 +131,7 @@ main {
 }
 @media (max-width: 900px) {
   .featurette .container-sm .featurette-card .featurette-desc h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 .featurette .container-sm .featurette-card .featurette-desc h1 .grey-text {
